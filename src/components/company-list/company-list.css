@@ -1,0 +1,142 @@
+.company-list-container {
+    position: relative;
+}
+
+.overlay-layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.filter-container {
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 120px;
+    margin-top: 80px;
+}
+
+.content-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.table-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: auto;
+    margin-top: -150px; 
+}
+
+.table-wrapper {
+    max-height: 400px; 
+    overflow: auto;
+    position: relative;
+}
+
+.company-table {
+    max-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    overflow: auto; 
+}
+.company-table th {
+    position: sticky;
+    top: 0; 
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: 600;
+    text-align: left;
+    padding: 12px;
+    z-index: 8; 
+}
+.company-table td {
+    padding: 25px;
+}
+
+.company-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.company-table th:hover {
+    background-color: #ddd;
+}
+
+.company-table td:hover {
+    background-color: #f0f0f0;
+}
+
+.company-table td.selected {
+    background-color: #ffc107;
+    color: #333;
+    font-weight: 600;
+}
+
+.company-table td.edit-td:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.filter-and-create-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.create-button {
+    width: 150px;
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 9;
+    margin-top: -350px;
+    margin-bottom: -70px;
+}
+
+.create-button:hover {
+    background-color: #0056b3; 
+}
+
+.edit-cell {
+    background-color: #007bff; 
+    color: #fff; 
+    font-weight: bold;
+}
+
+.delete-cell {
+    background-color: #dc3545; 
+    color: #fff; 
+    font-weight: bold;
+}
+
+.edit-cell:hover, .delete-cell:hover {
+    background-color: #0056b3; 
+}
